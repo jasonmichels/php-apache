@@ -2,7 +2,7 @@
 Docker PHP Apache base image from 5.6.9-apache php image on docker hub.
 
 ### Requirements
-- The root of the site points to the public folder inside the directory you attach to the image.  Eg. /path/to/code needs to have a public/ folder with yoru index.php or index.html file
+- The root of the site points to the public folder inside the directory you attach to the image.  Eg. /path/to/code needs to have a public folder with your index.php or index.html file. The other option is to use your own apache config.
 
 ### Build
 To build this image yourself from the code follow these command
