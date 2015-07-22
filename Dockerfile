@@ -3,7 +3,6 @@ FROM php:5.6.9-apache
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN mkdir -p /var/www/html/public
-VOLUME ["/var/www/html"]
 
 # Setup Apache and PHP
 RUN 	apt-get -o 'Acquire::CompressionTypes::Order::="gz"' update && \
