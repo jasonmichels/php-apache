@@ -21,4 +21,6 @@ RUN 	apt-get -o 'Acquire::CompressionTypes::Order::="gz"' update && \
 
 # Copy config files
 COPY config/apache2.conf /etc/apache2/apache2.conf
+COPY config/000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY config/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 COPY config/php.ini /usr/local/etc/php/php.ini
