@@ -12,6 +12,7 @@ RUN 	apt-get -o 'Acquire::CompressionTypes::Order::="gz"' update && \
 	libjpeg-dev \
 	libpng-dev && \
 	rm -rf /var/lib/apt/lists/* && \
+	pecl install xdebug && \
 	docker-php-ext-configure gd --with-png-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && \
 	docker-php-ext-install mcrypt bz2 gd mbstring exif zip pdo_mysql mysqli pcntl bcmath && \
 	apt-get purge --auto-remove -y libmcrypt-dev libbz2-dev libpng12-dev && \
